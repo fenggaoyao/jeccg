@@ -48,7 +48,7 @@ RUN  cd /etc/yum.repos.d/ \
      &&  mkdir  -p  /var/www \
      &&  mkdir -p /var/www/html
 # 前端迁移到系统文件中 默认是80端口 同级目录下的html地址
-ADD  ant-design-vue-jeecg/dist/ /var/www/html/
+# ADD  ant-design-vue-jeecg/dist/ /var/www/html/
 # 拷贝相关的jar包
 ADD jeecg-boot/jeecg-boot-module-system/target/jeecg-boot-module-system-2.2.0.jar jeecgboot.jar
 EXPOSE  80  8080 81
